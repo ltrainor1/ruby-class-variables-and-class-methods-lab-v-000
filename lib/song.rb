@@ -14,7 +14,7 @@ def initialize(name, artist, genre)
   @@count+=1
   
   @@artists << artist
-  
+  @@genres << genre 
 end 
 
 attr_reader :name, :artist, :genre 
