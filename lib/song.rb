@@ -10,12 +10,13 @@ def initialize(name, artist, genre)
   
   @@count+=1
   
-  if !@@artists.include?(artist)
-    @@artists << artist
-  end 
+  @@artists << artist
   
 end 
 
 attr_reader :name, :artist, :genre 
-  
+
+def self.artists
+  @@artists.uniq 
+end 
 end 
