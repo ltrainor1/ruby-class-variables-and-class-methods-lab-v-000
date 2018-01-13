@@ -14,7 +14,8 @@ def initialize(name, artist, genre)
   @@count+=1
   
   @@artists << artist
-  @@genres << genre 
+  @@genres << genre
+  
   if @@genre_count[genre]
     @@genre_count[genre] = 1 
   else 
