@@ -2,6 +2,9 @@ class Song
   
 @@count = 0 
 @@artists = []
+@@genres = []
+
+@@genre_count = {}
 
 def initialize(name, artist, genre)
   @name = name 
@@ -19,4 +22,9 @@ attr_reader :name, :artist, :genre
 def self.artists
   @@artists.uniq 
 end 
+
+def self.genres
+  @@genres.uniq
+end 
+
 end 
