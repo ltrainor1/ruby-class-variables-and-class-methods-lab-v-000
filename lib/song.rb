@@ -15,6 +15,12 @@ def initialize(name, artist, genre)
   
   @@artists << artist
   @@genres << genre 
+  if @@genre_count[genre]
+    @@genre_count[genre] = 1 
+  else 
+    @@genre_count[genre] += 1 
+  end 
+  
 end 
 
 attr_reader :name, :artist, :genre 
